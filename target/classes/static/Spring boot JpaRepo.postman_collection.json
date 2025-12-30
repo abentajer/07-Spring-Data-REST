@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "1cf368d3-884d-4b7b-9279-08f5252982b0",
+		"name": "Spring boot JpaRepo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "7100993"
+	},
+	"item": [
+		{
+			"name": "Get all students",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"John\",\n    \"lastName\": \"Doe\",\n    \"email\": \"john@test.com\"\n}"
+				},
+				"url": "http://localhost:8080/api/students"
+			},
+			"response": []
+		},
+		{
+			"name": "Search by email",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/students/search?email=ahmed@bentajer.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"students",
+						"search"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "ahmed@bentajer.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get by Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/students/55"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Student",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"fistName\": \"Joudia\",\n    \"lastName\": \"Bentajer\",\n    \"email\": \"joudia@bentajer.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/students"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Student Object",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\" : \"Joudia\",\n    \"lastName\" : \"Bentajer\",\n    \"email\" : \"joudia@mail.com\",\n    \"id\" : 55\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/students"
+			},
+			"response": []
+		},
+		{
+			"name": "Patch",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/students/55/email?newEmail=new@test.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"students",
+						"55",
+						"email"
+					],
+					"query": [
+						{
+							"key": "newEmail",
+							"value": "new@test.com"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
