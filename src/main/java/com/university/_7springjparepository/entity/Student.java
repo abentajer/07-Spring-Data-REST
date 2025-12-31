@@ -1,4 +1,4 @@
-package com.university._6springjparepository.entity;
+package com.university._7springjparepository.entity;
 
 import jakarta.persistence.*;
 

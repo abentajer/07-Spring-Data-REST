@@ -1,12 +1,10 @@
-package com.university._6springjparepository.repository;
+package com.university._7springjparepository.repository;
 
-import com.university._6springjparepository.entity.Student;
+import com.university._7springjparepository.entity.Student;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import org.springframework.data.rest.core.annotation.RestResource;
-
-import java.util.List;
 
 // 1. ANNOTATION: customize the path.
 // Default would be "/students", but here we can be explicit.

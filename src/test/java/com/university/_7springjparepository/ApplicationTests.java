@@ -1,4 +1,4 @@
-package com.university._6springjparepository;
+package com.university._7springjparepository;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
