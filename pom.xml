@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.university</groupId>
-    <artifactId>06-Spring-JpaRepository</artifactId>
+    <artifactId>07-Spring-Data-Rest</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>06-Spring-JpaRepository</name>
-    <description>06-Spring-JpaRepository</description>
+    <name>07-Spring-Data-Rest</name>
+    <description>07-Spring-Data-Rest</description>
     <url/>
     <licenses>
         <license/>
