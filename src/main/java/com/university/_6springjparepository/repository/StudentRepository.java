@@ -16,6 +16,7 @@ import java.util.List;
 public interface StudentRepository extends JpaRepository<Student, Integer> {
 
     // 2. EXPOSING QUERY METHODS
+    //fg
     // Spring Data REST automatically finds this and exposes it at:
     // URL: /students/search/findByEmail?email=...
     // We use @Param to name the query parameter in the URL
